@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import Audio from './audio.js'
+import speechRecognition from '../speechRecognition.js'
 
 class App extends Component {
 
   constructor (props) {
     super(props)
+  }
+
+  componentDidMount () {
+    speechRecognition()
   }
 
   render () {
