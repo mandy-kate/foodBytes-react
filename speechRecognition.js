@@ -1,5 +1,5 @@
 
-module.exports = function speechRecogntion() {
+module.exports = function speechRecogntion(props) {
   var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
   var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
   var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
@@ -39,6 +39,11 @@ module.exports = function speechRecogntion() {
   recognition.onresult = function(event) {
     // diagnostic.textContent = 'Result received: ' + command + '.';
     console.log('result here', event.results[0][0].transcript);
+    // STATE.ACTIONCREATOR  -NEXT -PREVIOUS
+
+
+
+
   }
 
   recognition.onspeechend = function() {
