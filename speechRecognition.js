@@ -37,7 +37,7 @@ module.exports = function speechRecogntion(props) {
   var index = -1
 
   recognition.onresult = function(event) {
-    // diagnostic.textContent = 'Result received: ' + command + '.';
+    // diagnostic.textContent = 'Result received: ' + '.';
     console.log('result here', event.results[0][0].transcript);
     // STATE.ACTIONCREATOR  -NEXT -PREVIOUS
 
